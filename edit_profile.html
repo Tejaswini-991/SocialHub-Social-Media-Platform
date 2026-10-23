@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Edit profile · SocialHub{% endblock %}{% block content %}<article class="card auth"><p class="eyebrow">MAKE IT YOURS</p><h1>Edit your profile</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button class="button wide">Save profile ↗</button></form></article>{% endblock %}
